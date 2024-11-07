@@ -90,6 +90,7 @@ main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer to bottom */
     flex: 1 0 auto;
+    margin-top: 47px; 
 }
 
 
@@ -97,3 +98,40 @@ main {
 footer {
     background-color: orange;
 }
+
+/* media query: tablets and larger (768 and up) */
+
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label{
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /*push main contet down to accomodate larger header*/
+        margin-top: 79px;
+    }
+}
+

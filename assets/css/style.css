@@ -405,7 +405,7 @@ color: #fafafa;
     }
 
     benefits-mental > div {
-        align-self: flex start;
+        align-self: flex-start;
     }
 
     #benefits-physical > div {
